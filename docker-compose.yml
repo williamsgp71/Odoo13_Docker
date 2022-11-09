@@ -10,14 +10,6 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
-      - ./fiberlux/flex-o:/mnt/flex-o
-      - ./fiberlux/flex-o/l10n-cpe:/mnt/l10n-cpe
-      - ./fiberlux/itgrupo:/mnt/itgrupo
-      - ./fiberlux/payroll_it:/mnt/payroll_it
-      - ./fiberlux/extras:/mnt/extras
-      - ./fiberlux/noenterprise:/mnt/noenterprise
-      - ./fiberlux/usefull_modules:/mnt/usefull_modules
-      - ./fiberlux/reports:/mnt/reports
 
   db:
     image: postgres:13
